@@ -7,7 +7,7 @@ MEM_CONFIG_BLOCK_CONFIG  GlobalConfigBlock = {
     .BlockSize      = sizeof(MEM_CONFIG_BLOCK_CONFIG),
     .BoardMask      = BOARD_ID_MASK_DEFAULT
   },
-  .MaxFreq          = DDR5500_FREQUENCY,
+  .MaxFreq          = MEM_CFG_MEMFREQ,
   .ChMask           = 0xF,
   .DdrType          = DDR_TYPE_LPDDR5,
   .DeviceDensity    = 16,

@@ -121,8 +121,8 @@
 #define CORE_6_7_LOWEST_PERF             800
 
 #define CORE_8_9_DESIRED_PERF_REG        0x06590098
-#define CORE_8_9_HIGHEST_PERF            2200
-#define CORE_8_9_NOMINAL_PERF            2200
+#define CORE_8_9_HIGHEST_PERF            2800
+#define CORE_8_9_NOMINAL_PERF            2800
 #define CORE_8_9_LOWEST_NON_LINEAR_PERF  800
 #define CORE_8_9_LOWEST_PERF             800
 

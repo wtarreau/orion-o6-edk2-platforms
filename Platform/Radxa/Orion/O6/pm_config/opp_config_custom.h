@@ -7,7 +7,7 @@
 #include "pm_export_config.h"
 #include "opp_config.h"
 
-#define PM_OPP_TABLE_CONFIG   0
+#define PM_OPP_TABLE_CONFIG   1
 
 #if PM_OPP_TABLE_CONFIG
 /* V1.1, DFS */
@@ -56,8 +56,10 @@ static domain_opp_config_t dxs_gb0 = {
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 790 },
-        { .level = 2300UL, .voltage = 850 },
-        { .level = 2400UL, .voltage = 920 },   /* sustained */
+        { .level = 2400UL, .voltage = 850 },
+        { .level = 2800UL, .voltage = 950 },   /* sustained */
+        //{ .level = 3000UL, .voltage = 970 },   /* sustained */
+        //{ .level = 3100UL, .voltage = 990 },   /* sustained */
     },
 };
 
@@ -71,7 +73,9 @@ static domain_opp_config_t dxs_gb1 = {
         { .level = 1800UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 790 },
         { .level = 2400UL, .voltage = 850 },
-        { .level = 2500UL, .voltage = 920 },   /* sustained */
+        { .level = 2800UL, .voltage = 950 },   /* sustained */
+        //{ .level = 3000UL, .voltage = 970 },   /* sustained */
+        //{ .level = 3100UL, .voltage = 990 },   /* sustained */
     },
 };
 
@@ -85,7 +89,8 @@ static domain_opp_config_t dxs_gm0 = {
         { .level = 1800UL, .voltage = 790 },
         { .level = 2000UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 850 },
-        { .level = 2300UL, .voltage = 890 },   /* sustained */
+        { .level = 2400UL, .voltage = 920 },   /* sustained */
+        //{ .level = 2600UL, .voltage = 950 },   /* sustained */
     },
 };
 
@@ -98,8 +103,9 @@ static domain_opp_config_t dxs_gm1 = {
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
         { .level = 2000UL, .voltage = 790 },
-        { .level = 2100UL, .voltage = 850 },
-        { .level = 2200UL, .voltage = 890 },   /* sustained */
+        { .level = 2200UL, .voltage = 850 },
+        { .level = 2400UL, .voltage = 920 },   /* sustained */
+        //{ .level = 2600UL, .voltage = 950 },   /* sustained */
     },
 };
 
@@ -109,6 +115,8 @@ static domain_opp_config_t dxs_dsu = {
     .opp_table = {
         { .level =  500UL, .voltage = 790 },
         { .level = 1300UL, .voltage = 790 },   /* sustained */
+        //{ .level = 1500UL, .voltage = 790 },   /* sustained */
+        //{ .level = 1600UL, .voltage = 790 },   /* sustained */
     },
 };
 
@@ -140,7 +148,12 @@ static domain_opp_config_t dxs_ci = {
     .size = 1,
     .sustained_idx = 0,
     .opp_table = {
-        { .level = 1500UL },
+        { .level = 1500UL },  // 40.3G
+        //{ .level = 1600UL },  // 42.8G + segv during build
+        //{ .level = 1650UL },  // 44.3G + segv during build
+        //{ .level = 1700UL },  // 45.7G + segv during build
+        //{ .level = 1800UL },  // 47.5G + segv during build
+        //{ .level = 1900UL }, // does not boot
     },
 };
 

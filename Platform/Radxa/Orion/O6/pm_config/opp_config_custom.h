@@ -58,13 +58,13 @@ static domain_opp_config_t dxs_gb0 = {
         { .level = 2200UL, .voltage = 790 },
         { .level = 2400UL, .voltage = 850 },
         { .level = 2600UL, .voltage = 920 },
-        { .level = 2800UL, .voltage = 950 },   /* sustained */
+        { .level = 2700UL, .voltage = 950 },   /* sustained */
     },
 };
 
 static domain_opp_config_t dxs_gb1 = {
-    .size = 8,
-    .sustained_idx = 7,
+    .size = 9,
+    .sustained_idx = 8,
     .opp_table = {
         { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
@@ -73,13 +73,14 @@ static domain_opp_config_t dxs_gb1 = {
         { .level = 2200UL, .voltage = 790 },
         { .level = 2400UL, .voltage = 850 },
         { .level = 2600UL, .voltage = 920 },
-        { .level = 2800UL, .voltage = 950 },   /* sustained */
+        { .level = 2800UL, .voltage = 950 },
+        { .level = 3000UL, .voltage = 970 },   /* sustained */
     },
 };
 
 static domain_opp_config_t dxs_gm0 = {
-    .size = 7,
-    .sustained_idx = 6,
+    .size = 8,
+    .sustained_idx = 7,
     .opp_table = {
         { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
@@ -87,13 +88,14 @@ static domain_opp_config_t dxs_gm0 = {
         { .level = 1800UL, .voltage = 790 },
         { .level = 2000UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 850 },
-        { .level = 2400UL, .voltage = 920 },   /* sustained */
+        { .level = 2400UL, .voltage = 920 },
+        { .level = 2600UL, .voltage = 970 },   /* sustained */
     },
 };
 
 static domain_opp_config_t dxs_gm1 = {
-    .size = 7,
-    .sustained_idx = 6,
+    .size = 8,
+    .sustained_idx = 7,
     .opp_table = {
         { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
@@ -101,7 +103,8 @@ static domain_opp_config_t dxs_gm1 = {
         { .level = 1800UL, .voltage = 790 },
         { .level = 2000UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 850 },
-        { .level = 2400UL, .voltage = 920 },   /* sustained */
+        { .level = 2400UL, .voltage = 920 },
+        { .level = 2600UL, .voltage = 990 },   /* sustained */
     },
 };
 

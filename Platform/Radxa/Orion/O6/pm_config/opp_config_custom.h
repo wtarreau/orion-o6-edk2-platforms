@@ -7,7 +7,7 @@
 #include "pm_export_config.h"
 #include "opp_config.h"
 
-#define PM_OPP_TABLE_CONFIG   0
+#define PM_OPP_TABLE_CONFIG   1
 
 #if PM_OPP_TABLE_CONFIG
 /* V1.1, DFS */
@@ -56,8 +56,8 @@ static domain_opp_config_t dxs_gb0 = {
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 790 },
-        { .level = 2300UL, .voltage = 850 },
-        { .level = 2400UL, .voltage = 920 },   /* sustained */
+        { .level = 2400UL, .voltage = 850 },
+        { .level = 2600UL, .voltage = 920 },   /* sustained */
     },
 };
 
@@ -71,7 +71,7 @@ static domain_opp_config_t dxs_gb1 = {
         { .level = 1800UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 790 },
         { .level = 2400UL, .voltage = 850 },
-        { .level = 2500UL, .voltage = 920 },   /* sustained */
+        { .level = 2600UL, .voltage = 920 },   /* sustained */
     },
 };
 
@@ -85,7 +85,7 @@ static domain_opp_config_t dxs_gm0 = {
         { .level = 1800UL, .voltage = 790 },
         { .level = 2000UL, .voltage = 790 },
         { .level = 2200UL, .voltage = 850 },
-        { .level = 2300UL, .voltage = 890 },   /* sustained */
+        { .level = 2400UL, .voltage = 920 },   /* sustained */
     },
 };
 
@@ -98,8 +98,8 @@ static domain_opp_config_t dxs_gm1 = {
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
         { .level = 2000UL, .voltage = 790 },
-        { .level = 2100UL, .voltage = 850 },
-        { .level = 2200UL, .voltage = 890 },   /* sustained */
+        { .level = 2200UL, .voltage = 850 },
+        { .level = 2400UL, .voltage = 920 },   /* sustained */
     },
 };
 

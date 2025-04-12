@@ -74,7 +74,7 @@ static domain_opp_config_t dxs_gb1 = {
         { .level = 2400UL, .voltage = 850 },
         { .level = 2600UL, .voltage = 920 },
         { .level = 2800UL, .voltage = 950 },
-        { .level = 3100UL, .voltage = 990 },   /* sustained */
+        { .level = 3200UL, .voltage = 1030 },   /* sustained */
     },
 };
 
@@ -113,7 +113,7 @@ static domain_opp_config_t dxs_dsu = {
     .sustained_idx = 1,
     .opp_table = {
         { .level =  500UL, .voltage = 790 },
-        { .level = 1300UL, .voltage = 790 },   /* sustained */
+        { .level = 1300UL, .voltage = 830 },   /* sustained */
     },
 };
 

@@ -15,13 +15,13 @@ static domain_opp_config_t dxs_gc = {
     .size = 7,
     .sustained_idx = 6,
     .opp_table = {
-        { .level = 72UL,  .frequency = 350000, .voltage = 790 }, // 350MHz, 2 core
-        { .level = 216UL, .frequency = 350000, .voltage = 790 }, // 350MHz, 6 core
-        { .level = 350UL, .frequency = 350000, .voltage = 790 }, // 350MHz, 10 core
-        { .level = 600UL, .frequency = 600000, .voltage = 790 }, // 600MHz, 10 core
-        { .level = 800UL, .frequency = 800000, .voltage = 790 }, // 800MHz, 10 core
-        { .level = 1000UL,                     .voltage = 790 },
-        { .level = 1100UL,                     .voltage = 790 },
+        { .level = 72UL,  .frequency = 350000, .voltage = 800 }, // 350MHz, 2 core
+        { .level = 216UL, .frequency = 350000, .voltage = 800 }, // 350MHz, 6 core
+        { .level = 350UL, .frequency = 350000, .voltage = 800 }, // 350MHz, 10 core
+        { .level = 600UL, .frequency = 600000, .voltage = 800 }, // 600MHz, 10 core
+        { .level = 800UL, .frequency = 800000, .voltage = 800 }, // 800MHz, 10 core
+        { .level = 1000UL,                     .voltage = 800 },
+        { .level = 1100UL,                     .voltage = 800 },
     },
 };
 
@@ -29,12 +29,12 @@ static domain_opp_config_t dxs_gt = {
     .size = 6,
     .sustained_idx = 5,
     .opp_table = {
-        { .level = 72UL,  .frequency = 350000, .voltage = 790 }, // 350MHz, 2 core
-        { .level = 216UL, .frequency = 350000, .voltage = 790 }, // 350MHz, 6 core
-        { .level = 350UL, .frequency = 350000, .voltage = 790 }, // 350MHz, 10 core
-        { .level = 600UL, .frequency = 600000, .voltage = 790 }, // 600MHz, 10 core
-        { .level = 800UL, .frequency = 800000, .voltage = 790 }, // 800MHz, 10 core
-        { .level = 1000UL,                     .voltage = 790 },
+        { .level = 72UL,  .frequency = 350000, .voltage = 800 }, // 350MHz, 2 core
+        { .level = 216UL, .frequency = 350000, .voltage = 800 }, // 350MHz, 6 core
+        { .level = 350UL, .frequency = 350000, .voltage = 800 }, // 350MHz, 10 core
+        { .level = 600UL, .frequency = 600000, .voltage = 800 }, // 600MHz, 10 core
+        { .level = 800UL, .frequency = 800000, .voltage = 800 }, // 800MHz, 10 core
+        { .level = 1000UL,                     .voltage = 800 },
     },
 };
 
@@ -51,7 +51,7 @@ static domain_opp_config_t dxs_gb0 = {
     .size = 7,
     .sustained_idx = 6,
     .opp_table = {
-        { .level =  800UL, .voltage = 730 },
+        { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
@@ -65,7 +65,7 @@ static domain_opp_config_t dxs_gb1 = {
     .size = 7,
     .sustained_idx = 6,
     .opp_table = {
-        { .level =  800UL, .voltage = 730 },
+        { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
@@ -79,7 +79,7 @@ static domain_opp_config_t dxs_gm0 = {
     .size = 7,
     .sustained_idx = 6,
     .opp_table = {
-        { .level =  800UL, .voltage = 730 },
+        { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
@@ -93,7 +93,7 @@ static domain_opp_config_t dxs_gm1 = {
     .size = 7,
     .sustained_idx = 6,
     .opp_table = {
-        { .level =  800UL, .voltage = 730 },
+        { .level =  800UL, .voltage = 750 },
         { .level = 1200UL, .voltage = 750 },
         { .level = 1500UL, .voltage = 750 },
         { .level = 1800UL, .voltage = 790 },
